@@ -1,0 +1,78 @@
+# Hello from Welcome Page
+
+- item 1
+- item 2
+- item 3
+
+[google](https://google.co.in)
+
+# Hello, world!
+
+
+<blockquote>
+  A blockquote with <em>some</em> emphasis.
+</blockquote>
+
+> A blockquote with _some_ emphasis.
+
+# Heading (rank 1)
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+> Block quote
+
+- Unordered
+- List
+
+1. Ordered
+2. List
+
+A paragraph, introducing a thematic break:
+
+---
+
+```js
+some.code();
+```
+
+a [link](https://example.com) an ![image](https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg)
+some _emphasis_,
+something **strong**, and finally a little `code()`.
+
+  # Example of Image Loop in MDX
+
+Here are some images:
+
+<ul>
+  {(() => {
+    let items = [];
+    for (let i = 1; i <= 5; i++) {
+      items.push(
+          <img 
+            src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" 
+            alt={`Image ${i}`} 
+            key={i}
+            style={{ width: '100%', height: 'auto' }} 
+          />
+      );
+    }
+    return items;
+  })()}
+</ul>
+
+
+{(()=>{
+  let items = []
+  Array.from({length:5}).map((_,index)=>{
+    items.push(<span key={index} className="space-x-5 mx-5">{index+1}</span>)
+  })
+  return items;
+})()}
